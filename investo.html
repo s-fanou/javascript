@@ -1,0 +1,206 @@
+<!doctype html><!-- This is required by Bootstrap -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Investotech Exercise </title>
+
+    <!--  version 1.0, 2020.11.22 -->
+
+    <!-- Required by Bootstrap for responsive pages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to font-awesome -->
+    <link rel="stylesheet" property="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- compiled JavaScript Required by Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Investotech Javascript file -->
+    <script src="investo.js"></script>
+
+</head>
+
+<body>
+    <!-- Bootstrap The .container class provides a responsive fixed width container -->
+    <div class="container">
+
+        <header id="InvestoHeader">
+            <div class="row">
+                <h1> Investotech Exercise </h1>
+            </div>
+            <div class="row">
+                <p><a href="https://www.investotech.com" title="Go to investotech.com" target="new"> www.investotech.com
+                    </a></p>
+            </div>
+        </header>
+
+        <form action="" method="post" id="investoForm">
+            <div class="row">
+                <div class="col-sm-8">
+                    <fieldset class="form-group">
+                        <legend class="caption">Personal information:</legend>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <!-- name, surname col-sm-4,4,4 -->
+            <div class="row">
+                <!-- BS requires that form controls are wrapped in form-group-->
+                <div class="col-sm-4 form-group">
+                    <p><strong> Name: </strong></p>
+                    <input type="text" name="txtFName" class="form-control" id="txtFName" title="Enter your first name"
+                        value="">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <p><strong>Surname: </strong></p>
+                    <input type="text" name="txtSurname" class="form-control" id="txtSurname" title="Enter your surname"
+                        value="">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <!-- it is here for formatting -->
+                </div>
+            </div>
+            <!-- email, age col-sm 6,2,4 -->
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <p><strong>E-Mail: </strong></p>
+                    <input type="email" name="txtEmail" class="form-control" id="txtEmail"
+                        title="Enter your email address" value="">
+                </div>
+                <div class="col-sm-2 form-group">
+                    <p><strong>Age: </strong></p>
+                    <input type="number" name="numAge" class="form-control" id="numAge" title="Enter your age" value="">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <!-- it is here for formatting -->
+                </div>
+            </div>
+            </fieldset>
+
+            <!-- Preferences Section 8,4 -->
+            <div class="row">
+                <div class="col-sm-8">
+                    <fieldset class="form-group">
+                        <legend class="caption">Preferences:</legend>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <!-- Favorite Color 3,9 -->
+            <div class="row">
+                <div class="col-sm-3 form-group">
+                    <p><strong>Favorite Color: </strong></p>
+                    <select name="sltFavoriteColor" class="form-control" id="sltFavoriteColor"
+                        title="Choose favorite color" form="investoForm">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                    </select>
+                </div>
+                <div class="col-sm-9 form-group">
+                    <!-- This div created for formating, to make the drop down box shorter-->
+                </div>
+            </div>
+            <!-- Checkboxes Contact Preference 12 -->
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <p title="At least one preference must be chosen"><strong>Contact Preference: </strong></p>
+                    <input type="checkbox" name="chkEmail" id="chkEmail" title="Prefer to be contacted by email">
+                    <label for="chkEmail" title="Prefer to be contacted by email">By E-Mail</label><br>
+                    <input type="checkbox" name="chkPhone" id="chkPhone" title="Prefer to be contacted by phone">
+                    <label for="chkPhone" title="Prefer to be contacted by phone">By Phone</label><br>
+                    <input type="checkbox" name="chkSMS" id="chkSMS" title="Prefer to be contacted by SMS">
+                    <label for="chkSMS" title="Prefer to be contacted by SMS">Via SMS</label><br>
+                </div>
+            </div>
+            </fieldset>
+            <!--the Submit button row 8,4 -->
+            <div class="row">
+                <div class="col-sm-8 form-group text-right">
+                    <input type="button" class="btn btn-default btn-info" name="btnSubmit" id="btnSubmit"
+                        title="Tap to submit" value="Submit">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </form>
+        <!--the end of the main form-->
+
+        <!-- -------------------------------- END of the main FORM ----------------- -->
+
+        <hr>
+
+        <!-- -------------------------------- EXPORT ------------------ ----------------- -->
+        <div class="row">
+            <!--the Export button row-->
+            <div class="col-sm-12 form-group text-right">
+                <input type="button" class="btn btn-default btn-info" name="btnExport" id="btnExport"
+                    title="Tap to Export" value="Export">
+            </div>
+        </div>
+        <!-- -------------------------------- TABLE ------------------ ----------------- -->
+        <fieldset class="form-group">
+            <legend class="caption">Data Table:</legend>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <span name="spNoData" id="spNoData"><strong>No Data</strong></span>
+                    <div style="overflow-x:auto;" name="dvTable" id="dvTable" hidden>
+                        <table id="dataTable" name="dataTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Email</th>
+                                    <th>Age</th>
+                                    <th>Favorite Color</th>
+                                    <th>By E-Mail</th>
+                                    <th>By Phone</th>
+                                    <th>Via SMS</th>
+                                    <th>Delete</th>
+                                </tr>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- ----------------------- MODAL for presenting the JSON -------------------  -->
+        <div class="modal fade" id="jsonModalDialogue" role="dialog">
+            <div class="modal-dialog modal-lg" style="overflow-y: initial">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Investotech : Present the JSON </h3>
+                    </div>
+                    <div class="modal-body" style="height: 500px; overflow-y: auto">
+                        <hr id="jsonModalLine" hidden>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-info" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- END MODAL -->
+
+    </div>
+    <!--closes the BS 'container' div at begining 'body'-->
+</body>
+
+</html>
