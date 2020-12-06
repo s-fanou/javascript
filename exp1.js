@@ -2,9 +2,12 @@
 
 $(document).ready(function () {
 
-    $("#span1").text("This is text assigned from jQuery");
+  $("#span1").text("This is text assigned from jQuery");
 
-    //this is a git test this should exist only in exp1 branch
-    // merge this into master
+  $("#btn1").click(function () {
+    //$("#span1").text("The button has been clicked!");
+    var xout = "button was clicked";
+    document.getElementById("span1").innerHTML = xout;
+  });
 
 }); // ends document.ready
