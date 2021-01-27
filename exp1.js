@@ -1,62 +1,22 @@
-/* JS file for exp1.html*/
+// this is marios first lesson 27 01 2021
 
-class person {
-  constructor() {
-    this.fname;//all the properties must be declared in the constructor
-    this.lname;
-  }
-
-  get firstname() {
-    return this.fname;
-  }
-
-  get lastname() {
-    return this.lname;
-  }
-
-  set firstname(name) {
-    this.fname = name;
-  }
-
-  set lastname(name) {
-    this.lname = name;
-  }
-} // ends class person
-
-class female extends person {
-  constructor() {
-    super(); //I must call super() even though person's constructor takes no arguments
-    this._gender; //this property is by default public
-  }
-
-  get gender() {
-    return this._gender;
-  }
-
-  set gender(mf) {
-    this._gender = mf;
-  }
-} // ends class female
-
-var sot = new person();
-var maryana = new female();
+/* i have no idea what to write....
+this game is inspired by the battle cats.  */
 
 $(document).ready(function () {
+
+  var level = 0;
+  var myvar2 = "maryana";
+
   $("#btn1").click(function () {
-    //$("#span1").text("The button has been clicked!");
-    //var xout = "button was clicked";
-    //document.getElementById("span1").innerHTML = sot.firstname + " " + sot.lastname;
+    
+    level = level + 1;
 
-    sot.firstname = "Lakis";
-    sot.lastname = "Antoniou";
-    $("#txtArea1").val(sot.firstname + " " + sot.lastname);
+    $("#txt1").val("The level is " + level);
 
-    maryana.firstname = "Maryana";
-    maryana.lastname = "Ofitserova";
-    maryana._gender = "female"; //notice here that I can assign to _gender without the setter
-
-    $("#span1").text(
-      maryana.firstname + " " + maryana.lastname + " " + maryana.gender
-    );
+    // this is the second textbox
+    //$("#txtArea1").val("");
+    $("#span1").text(myvar2);
   });
+
 }); // ends document.ready
