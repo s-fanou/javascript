@@ -7,14 +7,13 @@ $(document).ready(function () {
   $("#btn1").click(function () {
 
     /* homework instructions: You must create 2 variables 
-    using the keyword var. You can name the variables whatever
-    you want. 
-    (1)In the first variable I want you to put in 
-    the phrase "my name is Marios." and then display 
-    the value inside that variable in the top text-box.
-    (2) In the second variable I want you to put the 
-    result of the addition 4 + 6 and then display the 
-    result of this addition the second text-box */
+    using the keyword var. Name the variables phrase1 and
+    phrase2. 
+      In the first variable I want you to put in 
+    the phrase "I am 11 years old " and In the second variable 
+    put the phrase "and I live in Larnaca."
+      Then I want you to display both variables together in 
+    txtArea1. Good luck! */
 
     /* Marie write your code below here */
 
@@ -22,7 +21,7 @@ $(document).ready(function () {
 
     var result = 6+4;  
  
-    var new_result = result +10; 
+    var new_result = result + 10; 
 
     // this is the top text-box
     $("#txt1").val(my_name);
