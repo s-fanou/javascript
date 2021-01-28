@@ -3,8 +3,7 @@
 
 $(document).ready(function () {
 
-/* Marie you have to work only below
-in the click function */
+
   $("#btn1").click(function () {
 
     /* homework instructions: You must create 2 variables 
@@ -17,14 +16,23 @@ in the click function */
     result of the addition 4 + 6 and then display the 
     result of this addition the second text-box */
 
+    /* Marie write your code below here */
+
+    var my_name  =  "my name is marios 1";
+
+    var result = 6+4;  
+ 
+    var new_result = result +10; 
+
     // this is the top text-box
-    $("#txt1").val("");
+    $("#txt1").val(my_name);
 
     // this is the second text-box
-    $("#txtArea1").val("");
+    $("#txtArea1").val();
+
 
     // this is the red span area
-    $("#span1").text("");
+    $("#span1").text("The result of the addition is " + new_result);
 
   });
 
