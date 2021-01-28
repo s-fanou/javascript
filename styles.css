@@ -1,9 +1,21 @@
 body {
   margin: 20px;
-  background-color: rgb(231, 217, 171);
+  background-color: rgb(235, 232, 224);
 }
 
 #span1 {
-  background-color: red;
+  background-color: rgb(182, 219, 219);
   padding:10px;
+  margin: 10px;
+  border-style: solid;
+  border: 1px;
+}
+
+.text-boxes{
+  background-color: rgb(182, 219, 219);
+  margin: 10px;
+}
+
+#btn1 {
+  margin: 10px;
 }

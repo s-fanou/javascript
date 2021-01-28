@@ -13,7 +13,7 @@ $(document).ready(function () {
     the phrase "I am 11 years old " and In the second variable 
     put the phrase "and I live in Larnaca."
       Then I want you to display both variables together in 
-    txtArea1. Good luck! */
+    #span1. Good luck! */
 
     /* Marie write your code below here */
 
