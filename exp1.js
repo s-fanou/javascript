@@ -3,17 +3,28 @@
 /* i have no idea what to write....
 this game is inspired by the battle cats.  */
 
-$(document).ready(function () {
-  var level = 0;
-  var myvar2 = "maryana";
+$(document).ready(function () 
+{
+  var level = 1;
+  $("#txtLevel").val("The level is " + level);
 
-  $("#btn1").click(function () {
-    level = level + 1;
+  var gamePoints = 0;
+  $("#txtPoints").val("points: " + gamePoints);
 
-    $("#txt1").val("The level is " + level);
+
+
+  $("#btnAnswer").click(function () 
+  {
+
+    var numb1 =  $("#txtNumber1").val();
+    var numb2 =  $("#txtNumber2").val();
+
+
+    $("#txtLevel").val("The level is " + level);
 
     // this is the second textbox
     //$("#txtArea1").val("");
-    $("#span1").text(myvar2);
+    // $("#span1").text(myvar2);
+
   });
 }); // ends document.ready
