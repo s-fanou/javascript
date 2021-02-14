@@ -5,7 +5,7 @@
 $(document).ready(function () 
 {
   var level = 1;
-  $("#txtLevel").val("The level is: " + level);
+  $("#txtLevel").val("Your level: " + level);
 
   var gamePoints = 0;
   $("#txtPoints").val("Your points: " + gamePoints);
