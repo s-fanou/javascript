@@ -1,15 +1,14 @@
-// this is marios first lesson 27 01 2021
+// this is marios lesson 2  14 02 2021
 
-/* i have no idea what to write....
-this game is inspired by the battle cats.  */
+/*  this game is inspired by the battle cats.  */
 
 $(document).ready(function () 
 {
   var level = 1;
-  $("#txtLevel").val("The level is " + level);
+  $("#txtLevel").val("The level is: " + level);
 
   var gamePoints = 0;
-  $("#txtPoints").val("points: " + gamePoints);
+  $("#txtPoints").val("Your points: " + gamePoints);
 
 
 
