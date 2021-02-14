@@ -21,7 +21,7 @@ $(document).ready(function () {
     console.log("the value of UsersAnswer is: " + UsersAnswer);
 
     if (computerAnswer == UsersAnswer) {
-      alert("YOUR ANSWER IS CORRECT!!!");
+      alert("You are right " + numb1 + " and " + numb2 + " equals " + UsersAnswer);
     } else {
       alert("YOUR ANSWER IS WRONG!!!");
     }
