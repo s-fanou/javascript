@@ -8,3 +8,8 @@ body {
   padding:10px;
   margin: 20;
 }
+
+.text-boxes-style{
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #888888;
+}
