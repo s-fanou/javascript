@@ -26,7 +26,7 @@ $(document).ready(function () {
     var UsersAnswer = $("#txtaAnswer").val();
 
     //below you have to check if the answer which the user gave is equal to the addition
-    if () {
+    if (   ) {
       alert("You are right " + numb1 + " and " + numb2 + " equals " + UsersAnswer);
     } else {
       alert("YOUR ANSWER IS WRONG!!!");
