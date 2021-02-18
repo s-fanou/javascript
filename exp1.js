@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     //here you have to add the two numbers in text-box 1 and 2
 
-    //this is how you get the answer which the user put in the answer text-box
+    //this is how you get the answer which the user put in the answer text-box and put it in a variable
     var UsersAnswer = $("#txtaAnswer").val();
 
     //below you have to check if the answer which the user gave is equal to the addition
