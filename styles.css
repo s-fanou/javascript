@@ -21,3 +21,7 @@ body {
   border-radius: 4px;
   box-shadow: 4px 4px 4px #888888;
 }
+
+h1 {
+  color:azure;
+}
