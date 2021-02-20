@@ -17,21 +17,22 @@ $(document).ready(function () {
 
     /* Marie write your code below here */
 
-    var my_name  =  "my name is marios 1";
+var phrase1 = "I am eleven years old"; 
 
-    var result = 6+4;  
- 
-    var new_result = result + 10; 
+var phrase2 = " and i live in lanarca";
+  
+
+     
 
     // this is the top text-box
-    $("#txt1").val(my_name);
+    $("#txt1").val("");
 
     // this is the second text-box
     $("#txtArea1").val();
 
 
     // this is the red span area
-    $("#span1").text("The result of the addition is " + new_result);
+    $("#span1").text(phrase1 + phrase2); 
 
   });
 
