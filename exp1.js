@@ -17,18 +17,18 @@ $(document).ready(function () {
 
     //this is how you convert numeric text (string) into a number
     var number1 = parseInt(numb1); //use parseInt(put your var here) to convert numeric text to number
-
-    //here you have to convert the variable numb2 into a number, like above
-
-    //here you have to add the two numbers which you got from text-box 1 and 2
+ 
+     var number2 = parseInt(numb2);//here you have to convert the variable numb2 into a number, like above
+     
+    var Answer = numb1 + numb2; //here you have to add the two numbers which you got from text-box 1 and 2
 
     //this is how you get what the user wrote in the answer text-box and put it in a variable
     var UsersAnswer = $("#txtaAnswer").val();
 
     //below you have to check if the answer which the user gave is equal to the addition
-    if (   ) {
+    if (UsersAnswer == numb1 + numb2); 
       alert("You are right " + numb1 + " and " + numb2 + " equals " + UsersAnswer);
-    } else {
+      else {alert}; 
       alert("YOUR ANSWER IS WRONG!!!");
     } 
 
