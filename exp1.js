@@ -10,6 +10,7 @@ $(document).ready(function () {
 
     var finalAns = answer1 + answer2;
 
+    //PRESENT YOUR ANSWER USING THE STATEMENT BELOW:
     $("#span1").text(finalAns);
 
   });
